@@ -3,114 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Games by Kanan Rahimov — built with Claude Code</title>
-<meta name="description" content="Three games made by a psychiatrist with no programming background, with an AI coding agent as the only developer: ChessCoin, Abandoned Store and Abandoned Waterpark.">
-<meta property="og:title" content="Games by Kanan Rahimov — built with Claude Code">
-<meta property="og:description" content="A multiplayer chess game in Telegram and a 3D night-shift quest, made without a programmer.">
-<meta property="og:image" content="https://kentavr34.github.io/games/store-atrium.jpg">
-<link rel="icon" href="store.png">
-<style>
-  :root { --bg:#0b0d12; --panel:#141821; --line:#252b38; --text:#ece7dc; --dim:#a39d90; --gold:#d2a64f; --ink:#0b0d12; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 Georgia, "Times New Roman", serif; }
-  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
-  header { padding:56px 0 28px; }
-  .lang { float:right; font:14px/1 system-ui, sans-serif; }
-  .lang button { background:none; border:1px solid var(--line); color:var(--dim); padding:7px 11px; border-radius:6px; cursor:pointer; }
-  .lang button[aria-pressed="true"] { color:var(--ink); background:var(--gold); border-color:var(--gold); }
-  h1 { font-size:clamp(30px, 5vw, 44px); line-height:1.15; margin:0 0 14px; font-weight:normal; letter-spacing:-.01em; }
-  h1 em { color:var(--gold); font-style:normal; }
-  .lead { color:var(--dim); max-width:640px; margin:0; }
-  .game { background:var(--panel); border:1px solid var(--line); border-radius:14px; margin:26px 0; overflow:hidden; }
-  .game img.shot { display:block; width:100%; height:auto; }
-  .body { padding:24px 26px 26px; }
-  .row { display:flex; gap:16px; align-items:center; margin-bottom:10px; }
-  .row img { width:56px; height:56px; border-radius:12px; flex:none; }
-  h2 { margin:0; font-size:26px; font-weight:normal; }
-  .tag { font:13px/1 system-ui, sans-serif; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; }
-  p { margin:10px 0; }
-  ul { margin:10px 0; padding-left:20px; color:var(--dim); }
-  .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
-  a.btn { font:600 15px/1 system-ui, sans-serif; text-decoration:none; padding:13px 18px; border-radius:8px; border:1px solid var(--gold); color:var(--gold); }
-  a.btn.main { background:var(--gold); color:var(--ink); }
-  a.btn:hover { filter:brightness(1.12); }
-  .note { color:var(--dim); font-size:15px; }
-  footer { padding:26px 0 60px; color:var(--dim); font-size:15px; border-top:1px solid var(--line); margin-top:34px; }
-  footer a, .note a { color:var(--gold); }
-  [data-ru] { display:none; }
-  html[lang="ru"] [data-en] { display:none; }
-  html[lang="ru"] [data-ru] { display:revert; }
-  @media (max-width:520px) { header { padding-top:34px; } .body { padding:20px 18px; } .lang { float:none; margin-bottom:18px; } }
-</style>
+<title>Rokki &amp; Mikki — games and websites</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://ragimoff.org/game/">
+<meta http-equiv="refresh" content="0; url=https://ragimoff.org/game/">
+<script>location.replace("https://ragimoff.org/game/");</script>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b0c0d;color:#efe9dc;font:18px/1.5 Georgia,serif}a{color:#2fb8b4}</style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="lang" role="group" aria-label="Language">
-      <button type="button" data-set="en" aria-pressed="true">EN</button>
-      <button type="button" data-set="ru" aria-pressed="false">RU</button>
-    </div>
-    <h1 data-en>Games made <em>without a programmer</em></h1>
-    <h1 data-ru>Игры, сделанные <em>без программиста</em></h1>
-    <p class="lead" data-en>I am Kanan Rahimov, a psychiatrist. I cannot write code. These games were built with an AI coding agent, Claude Code: I design, test and write the bug reports, and the agent writes the code.</p>
-    <p class="lead" data-ru>Меня зовут Кенан Рагимов, я психиатр и не умею программировать. Эти игры сделаны с ИИ-агентом Claude Code: я придумываю, проверяю и пишу отчёты об ошибках, а код пишет агент.</p>
-  </header>
-
-  <section class="game">
-    <img class="shot" src="store-atrium.jpg" alt="Abandoned Store: a dark shop atrium seen in first person" width="1280" height="720">
-    <div class="body">
-      <div class="row"><img src="store.png" alt=""><div><div class="tag" data-en>3D quest · Windows · Android · free</div><div class="tag" data-ru>3D-квест · Windows · Android · бесплатно</div><h2 data-en>Abandoned Store</h2><h2 data-ru>Заброшенный магазин</h2></div></div>
-      <p data-en>A night shift in a closed shop that is not as empty as it looks. A first-person quest made in Godot 4; the first level, "Night Shift", is finished.</p>
-      <p data-ru>Ночная смена в закрытом магазине, где не так пусто, как кажется. Квест от первого лица на Godot 4; первый уровень, «Ночная смена», готов.</p>
-      <div class="btns">
-        <a class="btn main" href="https://magazin.45-67-216-36.sslip.io/proto/Magazin-L1-v1.0.3-windows.zip"><span data-en>Download for Windows (109 MB)</span><span data-ru>Скачать для Windows (109 МБ)</span></a>
-        <a class="btn" href="https://magazin.45-67-216-36.sslip.io/proto/magazin-L1-v1.0.3.apk"><span data-en>Android APK (98 MB)</span><span data-ru>Android APK (98 МБ)</span></a>
-        <a class="btn" href="https://magazin.45-67-216-36.sslip.io/proto/"><span data-en>All versions</span><span data-ru>Все версии</span></a>
-      </div>
-      <p class="note" data-en>Version 1.0.3. The in-game text is in Russian for now; an English version is planned.</p>
-      <p class="note" data-ru>Версия 1.0.3.</p>
-    </div>
-  </section>
-
-  <section class="game">
-    <div class="body">
-      <div class="row"><img src="chess.png" alt=""><div><div class="tag" data-en>Multiplayer chess · Telegram · free</div><div class="tag" data-ru>Сетевые шахматы · Telegram · бесплатно</div><h2>ChessCoin</h2></div></div>
-      <p data-en>Chess inside Telegram, with nothing to install: real-time games between players, play against Stockfish, tournaments, team "country wars", puzzles and lessons. About 53,000 lines of code.</p>
-      <p data-ru>Шахматы внутри Telegram, ничего не нужно устанавливать: партии между игроками в реальном времени, игра против Stockfish, турниры, командные «войны стран», задачи и уроки. Около 53 тысяч строк кода.</p>
-      <div class="btns">
-        <a class="btn main" href="https://t.me/chessgamecoin_bot"><span data-en>Play in Telegram</span><span data-ru>Играть в Telegram</span></a>
-        <a class="btn" href="https://github.com/kentavr34/chesscoin-game"><span data-en>Source code</span><span data-ru>Исходный код</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="game">
-    <div class="body">
-      <div class="tag" data-en>In development</div><div class="tag" data-ru>В разработке</div>
-      <h2 data-en>Abandoned Waterpark</h2><h2 data-ru>Заброшенный аквапарк</h2>
-      <p data-en>A co-op quest for up to four players in a spiral waterpark with an underwater world. Not released yet.</p>
-      <p data-ru>Командный квест до четырёх игроков в винтовом аквапарке с подводным миром. Ещё не выпущен.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p data-en>An honest note: the audience is still small and the games are far from polished. If you play one, tell me what broke and what bored you: <a href="mailto:kenan@ragimoff.org">kenan@ragimoff.org</a></p>
-    <p data-ru>Честно: игроков пока мало, и до блеска играм далеко. Если сыграете — напишите, что сломалось и где было скучно: <a href="mailto:kenan@ragimoff.org">kenan@ragimoff.org</a></p>
-  </footer>
-</div>
-<script>
-  (function () {
-    var saved = null;
-    try { saved = localStorage.getItem("lang"); } catch (e) {}
-    var lang = saved || ((navigator.language || "en").slice(0, 2) === "ru" ? "ru" : "en");
-    function set(l) {
-      document.documentElement.lang = l;
-      document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.set === l ? "true" : "false"); });
-      try { localStorage.setItem("lang", l); } catch (e) {}
-    }
-    document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { set(b.dataset.set); }); });
-    set(lang);
-  })();
-</script>
+<p>The games page has moved: <a href="https://ragimoff.org/game/">ragimoff.org/game</a></p>
 </body>
 </html>
